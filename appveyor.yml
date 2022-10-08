@@ -1,7 +1,6 @@
 environment:
   matrix:
   - nodejs_version: 'Stable'
-  - nodejs_version: 12.0.0
   - nodejs_version: 14.0.0
   - nodejs_version: 17.4.0
 
