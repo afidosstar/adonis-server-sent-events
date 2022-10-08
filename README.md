@@ -6,7 +6,7 @@ An addon/plugin package to provide server-sent events functionality for AdonisJS
 [![Build Status][travis-image]][travis-url]
 [![Coveralls][coveralls-image]][coveralls-url]
 
-<img src="http://res.cloudinary.com/adonisjs/image/upload/q_100/v1497112678/adonis-purple_pzkmzt.svg" width="200px" align="right" hspace="30px" vspace="140px">
+<img src="https://avatars.githubusercontent.com/u/13810373?s=3=200&v=4" width="200px" align="right" hspace="30px" vspace="140px">
 
 ## Getting Started
 ```bash
