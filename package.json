@@ -12,7 +12,7 @@
     "coverage": "nyc npm run test",
     "clean": "del-cli build",
     "compile": "npm run lint && npm run clean && tsc && npm run copy:files",
-    "copy:files": "copyfiles 'templates/**' 'build/templates' && copyfiles instructions.md build",
+    "copy:files": "copyfiles 'templates/**' 'build' && copyfiles instructions.md build",
     "build": "npm run compile",
     "prepublishOnly": "npm run build"
   },
