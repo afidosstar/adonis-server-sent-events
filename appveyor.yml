@@ -21,4 +21,4 @@ build: off
 clone_depth: 1
 
 matrix:
-fast_finish: true
+ fast_finish: true
