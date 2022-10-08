@@ -17,12 +17,7 @@ export class SSEStream {
   ) {
     this.logger = Logger;
     this.init = EventStream.init.bind(EventStream);
-    this.options = {
-      noIds: Config.get("sse.noIds"),
-      compressOutput: Config.get("sse.compressOutput"),
-      preferEventName: Config.get("sse.preferEventName"),
-      preferredEventName: Config.get("sse.preferredEventName"),
-    };
+    this.options = Config.get("sse");
   }
 
   public setup(
