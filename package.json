@@ -35,6 +35,7 @@
     "japa-cli": "^1.0.1",
     "mrm": "^4.1.6",
     "nyc": "^15.1.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
   "dependencies": {
