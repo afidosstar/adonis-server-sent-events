@@ -1,0 +1,2 @@
+import AdonisServerSentEventProvider from "./providers/AdonisServerSentEventProvider";
+export default AdonisServerSentEventProvider;
