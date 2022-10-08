@@ -17,7 +17,7 @@ An addon/plugin package to provide server-sent events functionality for AdonisJS
 
 >Firstly, follow the instructions in `instructions.md` file to setup the *Provider* and *Middleware*
 
-See the [_instructions.md_](https://github.com/affidosstar/adonis-server-sent-events/blob/master/instructions.md) file for the complete installation steps and follow as stated.
+See the [_instructions.md_](https://github.com/afidosstar/adonis-server-sent-events/blob/main/instructions.md) file for the complete installation steps and follow as stated.
 
 ## Registering provider
 
@@ -196,7 +196,7 @@ MIT
 
 ## Contributing
 
-See the [CONTRIBUTING.md](https://github.com/affidosstar/adonis-server-sent-events/blob/master/CONTRIBUTING.md) file for info
+See the [CONTRIBUTING.md](https://github.com/affidosstar/adonis-server-sent-events/blob/main/CONTRIBUTING.md) file for info
 
 [npm-image]: https://img.shields.io/npm/v/adonisjs-sse.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/adonis-server-sent-events
