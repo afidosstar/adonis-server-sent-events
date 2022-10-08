@@ -49,13 +49,13 @@ Server.middleware.register([
 
 ```ts
 Server.middleware.registerNamed({
-    eventsource: () => import('Adonis/Middleware/EventSourceWatcher'),
+    eventsource: () => import('@ioc:Adonis/Middleware/EventSourceWatcher'),
 })
 ```
 
 *HINT: It would be much easier and better to make the `EventSourceWatcher` middleware a global middleware*
 
->Setup serve-sent events route inside `start/routes.js` file.
+>Setup serve-sent events route inside `start/routes.ts` file.
 
 ```ts
 import Route from '@ioc:Adonis/Core/Route'
