@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "echo 'lint'",
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "pretest": "npm run lint",
     "test": "node -r @adonisjs/require-ts/build/register bin/test.ts",
