@@ -1,6 +1,6 @@
 {
   "name": "@fickou/adonis-server-sent-events",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -76,7 +76,10 @@
   "files": [
     "build/src",
     "build/index.d.ts",
-    "build/index.js"
+    "build/index.js",
+    "build/templates",
+    "build/adonis-typings",
+    "build/providers"
   ],
   "adonisjs": {
     "instructionsMd": "./build/instructions.md",
