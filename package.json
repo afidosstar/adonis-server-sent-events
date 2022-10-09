@@ -1,5 +1,5 @@
 {
-  "name": "@fickou/adonis-server-sent-event",
+  "name": "@fickou/adonis-server-sent-events",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",

@@ -2,7 +2,7 @@
 
 Install provider:
 ```bash
-node ace configure adonis-server-sent-events
+node ace configure @fickou/adonis-server-sent-events
 ```
 
 Like any other provider, you need to register the provider inside `.adonisrc.json` file.
@@ -11,7 +11,7 @@ Like any other provider, you need to register the provider inside `.adonisrc.jso
 {
     "providers": [
       ...,
-      "adonis-sent-events/providers/ServerSentEventsProvider",
+      "@fickou/adonis-server-sent-events/providers/ServerSentEventsProvider",
     ]
 }
 ```
