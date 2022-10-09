@@ -1,6 +1,6 @@
 {
   "name": "@fickou/adonis-server-sent-event",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,13 @@
     "build": "npm run compile",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "adonisjs",
+    "adonis5",
+    "server sent events",
+    "eventsource",
+    "streaming"
+  ],
   "author": "Fiacre Dossou AYEDOUN",
   "license": "MIT",
   "devDependencies": {
