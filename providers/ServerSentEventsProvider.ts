@@ -11,17 +11,17 @@ export default class ServerSentEventsProvider {
   protected container: IocContract;
 
   /**
-   * Registers instance under `Adonis/Addon/Stream`
+   * Registers instance under `Adonis/Addons/EventStream`
    * namespace.
    */
   private registerEventStream() {
-    this.container.singleton("Adonis/Addon/EventStream", () => {
+    this.container.singleton("Adonis/Addons/EventStream", () => {
       const Config = this.container.use("Adonis/Src/Config");
       const Logger = this.container.use("Logger");
       return new SSEStream(EventStream, Logger, Config);
     });
 
-    this.container.alias("Adonis/Addon/EventStream", "Stream");
+    this.container.alias("Adonis/Addons/EventStream", "Stream");
   }
 
   /**
@@ -52,7 +52,7 @@ export default class ServerSentEventsProvider {
     this.registerEventSource();
     this.container.bind("Adonis/Middleware/EventSourceWatcher", () => {
       return new EventSourceWatcher(
-        this.container.use("Adonis/Addon/EventStream")
+        this.container.use("Adonis/Addons/EventStream")
       );
     });
   }
