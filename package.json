@@ -1,19 +1,28 @@
 {
-  "name": "adonis-server-sent-event",
-  "version": "1.0.0",
+  "name": "@fickou/adonis-server-sent-events",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "echo 'lint'",
+    "lint": "eslint . --ext=.ts --fix",
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "pretest": "npm run lint",
-    "test": "node -r @adonisjs/require-ts/build/register bin/test.ts",
+    "test": "node -r @adonisjs/require-ts/build/register japaFile.ts",
+    "testr": "ts-node japaFile.ts",
+    "coverage": "nyc npm run test",
     "clean": "del-cli build",
     "compile": "npm run lint && npm run clean && tsc && npm run copy:files",
-    "copy:files": "copyfiles 'templates/**' 'build/templates' && copyfiles instructions.md build",
+    "copy:files": "copyfiles 'templates/**' 'build' && copyfiles instructions.md build",
     "build": "npm run compile",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "adonisjs",
+    "adonis5",
+    "server sent events",
+    "eventsource",
+    "streaming"
+  ],
   "author": "Fiacre Dossou AYEDOUN",
   "license": "MIT",
   "devDependencies": {
@@ -25,9 +34,26 @@
     "@types/uuid": "^8.3.4",
     "copyfiles": "^2.4.1",
     "del-cli": "^5.0.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-adonis": "^2.1.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "japa": "^4.0.0",
+    "japa-cli": "^1.0.1",
     "mrm": "^4.1.6",
+    "nyc": "^15.1.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afidosstar/adonis-server-sent-events"
+  },
+  "bugs": {
+    "email": "fiacre.ayedoun@gmail.com",
+    "url": "https://github.com/afidosstar/adonis-server-sent-events/issue"
+  },
+  "homepage": "https://github.com/afidosstar/adonis-server-sent-events",
   "dependencies": {
     "server-events-nodejs": "^0.2.1",
     "uuid": "^9.0.0"
@@ -54,9 +80,9 @@
   ],
   "adonisjs": {
     "instructionsMd": "./build/instructions.md",
-    "types": "@adocasts.com/adonis-server-sent-events",
+    "types": "@fickou/adonis-server-sent-events",
     "providers": [
-      "@adocasts.com/adonis-server-sent-events"
+      "@fickou/adonis-server-sent-events"
     ],
     "templates": {
       "config": [

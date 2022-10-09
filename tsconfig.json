@@ -7,7 +7,6 @@
     "types": [
       "@types/node",
       "@adonisjs/core",
-      "@adonisjs/http-server",
     ]
   }
 }

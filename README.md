@@ -6,7 +6,7 @@ An addon/plugin package to provide server-sent events functionality for AdonisJS
 [![Build Status][travis-image]][travis-url]
 [![Coveralls][coveralls-image]][coveralls-url]
 
-<img src="http://res.cloudinary.com/adonisjs/image/upload/q_100/v1497112678/adonis-purple_pzkmzt.svg" width="200px" align="right" hspace="30px" vspace="140px">
+<img src="https://avatars.githubusercontent.com/u/13810373?s=3=200&v=4" width="200px" align="right" hspace="30px" vspace="140px">
 
 ## Getting Started
 ```bash
@@ -49,13 +49,13 @@ Server.middleware.register([
 
 ```ts
 Server.middleware.registerNamed({
-    eventsource: () => import('Adonis/Middleware/EventSourceWatcher'),
+    eventsource: () => import('@ioc:Adonis/Middleware/EventSourceWatcher'),
 })
 ```
 
 *HINT: It would be much easier and better to make the `EventSourceWatcher` middleware a global middleware*
 
->Setup serve-sent events route inside `start/routes.js` file.
+>Setup serve-sent events route inside `start/routes.ts` file.
 
 ```ts
 import Route from '@ioc:Adonis/Core/Route'
