@@ -58,7 +58,7 @@ test.group("AdonisJS Server Sent Event Test(s)", (group) => {
     provider.boot();
   });
   test("sse provider instance registers instance(s) as expected", async (assert) => {
-    assert.instanceOf(ioc.use("Adonis/Addon/EventStream"), SSEStream);
+    assert.instanceOf(ioc.use("Adonis/Addons/EventStream"), SSEStream);
     assert.instanceOf(ioc.use("Adonis/Src/EventSource"), Source);
   });
   test("sse middleware instance(s) as expected", async (assert) => {
