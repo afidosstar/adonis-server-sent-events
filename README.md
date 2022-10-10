@@ -1,5 +1,5 @@
 
-# adonis-server-sent-events
+# @fickou/adonis-server-sent-events
 An addon/plugin package to provide server-sent events functionality for AdonisJS 5.0+
 
 [![NPM Version][npm-image]][npm-url]
@@ -10,7 +10,7 @@ An addon/plugin package to provide server-sent events functionality for AdonisJS
 
 ## Getting Started
 ```bash
-    adonis install adonis-server-sent-events --save
+    adonis install @fickou/adonis-server-sent-events --save
 ```
 
 ## Usage
@@ -200,7 +200,7 @@ MIT
 See the [CONTRIBUTING.md](https://github.com/affidosstar/adonis-server-sent-events/blob/main/CONTRIBUTING.md) file for info
 
 [npm-image]: https://img.shields.io/npm/v/adonisjs-sse.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/adonis-server-sent-events
+[npm-url]: https://npmjs.org/package/@fickou/adonis-server-sent-events
 
 [travis-image]: https://img.shields.io/travis/afidosstar/adonis-server-sent-events/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/afidosstar/adonis-server-sent-events
