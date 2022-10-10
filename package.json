@@ -1,8 +1,8 @@
 {
   "name": "@fickou/adonis-server-sent-events",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An addon/plugin package to provide server sent events functionality for AdonisJS 5.0+",
+  "main": "build/index.js",
   "scripts": {
     "lint": "eslint . --ext=.ts --fix",
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
@@ -23,6 +23,7 @@
     "eventsource",
     "streaming"
   ],
+  "private": false,
   "author": "Fiacre Dossou AYEDOUN",
   "license": "MIT",
   "devDependencies": {
@@ -47,11 +48,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/afidosstar/adonis-server-sent-events"
+    "url": "git+https://github.com/afidosstar/adonis-server-sent-events.git"
   },
   "bugs": {
-    "email": "fiacre.ayedoun@gmail.com",
-    "url": "https://github.com/afidosstar/adonis-server-sent-events/issue"
+    "url": "https://github.com/afidosstar/adonis-server-sent-events/issue",
+    "email": "fiacre.ayedoun@gmail.com"
   },
   "homepage": "https://github.com/afidosstar/adonis-server-sent-events",
   "dependencies": {
@@ -79,7 +80,8 @@
     "build/index.js",
     "build/templates",
     "build/adonis-typings",
-    "build/providers"
+    "build/providers",
+    "build/instructions.md"
   ],
   "adonisjs": {
     "instructionsMd": "./build/instructions.md",
@@ -92,5 +94,9 @@
         "sse.txt"
       ]
     }
+  },
+  "types": "./build/index.d.ts",
+  "directories": {
+    "test": "tests"
   }
 }
