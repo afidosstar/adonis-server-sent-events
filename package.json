@@ -85,7 +85,8 @@
     "build/templates",
     "build/adonis-typings",
     "build/providers",
-    "build/instructions.md"
+    "build/instructions.md",
+    "README.md"
   ],
   "adonisjs": {
     "instructionsMd": "./build/instructions.md",

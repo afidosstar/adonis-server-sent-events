@@ -65,7 +65,7 @@ import Route from '@ioc:Adonis/Core/Route'
  * If the 'eventsource' named middleware is set
  * then setup route like below
  */
-Route.get('/stream', ({ source }) => {
+Route.get('/stream', ( { source }: HttpServerSentEventContextContract ) => {
       // send a server-sent events comment
       source.send("Hello AdonisJS", '!This is a comment!');
 }).middleware(['eventsource']);
@@ -74,7 +74,7 @@ Route.get('/stream', ({ source }) => {
  * If the middleware is a global middlware
  * then setup route like below
  */
-Route.get('/stream', ({ source }) => {
+Route.get('/stream', ( { source }: HttpServerSentEventContextContract ) => {
       // send a server-sent events comment
       source.send("Hello AdonisJS", '!This is a comment!');
 })
@@ -92,7 +92,7 @@ import Mail from "@ioc:Adonis/Addons/Mail";
 
 export default class NotificationsController {
 
-    async sendEmail ({ request, auth, source }){
+    async sendEmail ({ request, auth, source }:HttpServerSentEventContextContract){
 
         let input = request.only([
             'ticket_user_id'
@@ -134,7 +134,7 @@ export default class NotificationsController {
  * source.send (METHOD)
  */
 
-send( data: object, comment: string, event: string, retry: number );
+send( data: Record<string,any>, comment: string, event: string, retry: number);
 
 ```
 

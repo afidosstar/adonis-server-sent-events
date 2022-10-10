@@ -39,7 +39,7 @@ The RFC proposals are created as issues on [adonisjs/rfcs](https://github.com/ad
 
 ## Report security issues
 
-All of the security issues, must be reported via [email](mailto:virk@adonisjs.com) and not using any of the public channels. [Learn more](https://adonisjs.com/security) about the security policy
+All of the security issues, must be reported via [email](mailto:fiacre.ayedoun@gmail.com) and not using any of the public channels. [Learn more](https://adonisjs.com/security) about the security policy
 
 ## Be a part of community
 
