@@ -10,7 +10,7 @@ An addon/plugin package to provide server-sent events functionality for AdonisJS
 
 ## Getting Started
 ```bash
-    adonis install @fickou/adonis-server-sent-events --save
+  npm i --save @fickou/adonis-server-sent-events 
 ```
 
 ## Usage

@@ -73,7 +73,7 @@
       "appveyor"
     ],
     "appveyorUsername": "afidosstar",
-    "minNodeVersion": "16.13.1",
+    "minNodeVersion": "8.0.0",
     "probotApps": [
       "stale"
     ]
