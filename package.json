@@ -90,7 +90,7 @@
   ],
   "adonisjs": {
     "instructionsMd": "./build/instructions.md",
-    "types": "@fickou/adonis-server-sent-events/adonis-typings",
+    "types": "@fickou/adonis-server-sent-events",
     "providers": [
       "@fickou/adonis-server-sent-events"
     ],

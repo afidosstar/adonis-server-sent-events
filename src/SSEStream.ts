@@ -25,7 +25,7 @@ export class SSEStream {
     optionsOverride: Partial<{ isIEReq: boolean } & SSEConfig> = {}
   ) {
     this.options.padForIE = optionsOverride.isIEReq;
-    this.logger.log("setup with", optionsOverride.isIEReq);
+    this.logger.info("Streaming is setup");
     return this.init(source, {
       pad_for_ie: this.options.padForIE,
       no_ids: this.options.noIds,

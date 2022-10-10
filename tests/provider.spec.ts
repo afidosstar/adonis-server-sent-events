@@ -23,7 +23,7 @@ let httpMethod = "GET";
 
 test.group("AdonisJS Server Sent Event Test(s)", (group) => {
   group.before(() => {
-    ioc.singleton("Adonis/Src/Config", () => {
+    ioc.singleton("Adonis/Core/Config", () => {
       let config = new Config();
       config.set("sse.noIds", true);
       config.set("sse.compressOutput", false);
@@ -32,7 +32,7 @@ test.group("AdonisJS Server Sent Event Test(s)", (group) => {
       return config;
     });
 
-    ioc.singleton("Logger", () => {
+    ioc.singleton("Adonis/Core/Logger", () => {
       return new Logger({ enabled: false, level: "debug", name: "test" });
     });
 

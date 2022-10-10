@@ -16,8 +16,8 @@ export default class ServerSentEventsProvider {
    */
   private registerEventStream() {
     this.container.singleton("Adonis/Addons/EventStream", () => {
-      const Config = this.container.use("Adonis/Src/Config");
-      const Logger = this.container.use("Logger");
+      const Config = this.container.use("Adonis/Core/Config");
+      const Logger = this.container.use("Adonis/Core/Logger");
       return new SSEStream(EventStream, Logger, Config);
     });
 
