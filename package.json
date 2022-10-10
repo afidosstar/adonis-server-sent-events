@@ -1,6 +1,6 @@
 {
   "name": "@fickou/adonis-server-sent-events",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An addon/plugin package to provide server sent events functionality for AdonisJS 5.0+",
   "main": "build/index.js",
   "scripts": {
