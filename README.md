@@ -23,7 +23,7 @@ See the [_instructions.md_](https://github.com/afidosstar/adonis-server-sent-eve
 
 Install provider:
 ```bash
-node ace configure adonis-server-sent-events
+node ace configure @fickou/adonis-server-sent-events
 ```
 
 Like any other provider, you need to register the provider inside `.adonisrc.json` file.
@@ -31,11 +31,12 @@ Like any other provider, you need to register the provider inside `.adonisrc.jso
 ```ts
 {
     "providers": [
-      ...,
-      "adonis-sent-events/providers/ServerSentEventsProvider",
+        ...,
+        "@fickou/adonis-server-sent-events/providers/ServerSentEventsProvider",
     ]
 }
 ```
+
 ## Registering middleware
 
 Register the following middleware inside `start/kernel.ts` file.

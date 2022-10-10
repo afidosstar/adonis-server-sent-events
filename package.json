@@ -24,6 +24,9 @@
     "streaming"
   ],
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Fiacre Dossou AYEDOUN",
   "license": "MIT",
   "devDependencies": {
