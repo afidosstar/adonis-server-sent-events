@@ -1,6 +1,6 @@
-import { ThrottleConfig } from '@ioc:Adonis/Addons/RequestThrottler'
+import Env from "@ioc:Adonis/Core/Env";
 
-export default  {
+const sseConfig: SSEConfig = {
   /*!
    |--------------------------------------------------
    | No IDs
@@ -56,3 +56,5 @@ export default  {
   preferredEventName: Env.get('SSE_PREFERRED_EVENT_NAME', 'broadcast')
 
 }
+
+export default sseConfig;
