@@ -10,7 +10,12 @@ declare module "@ioc:Adonis/Addons/ServerSentEvent" {
     preferredEventName: string;
   }
   export interface SourceContract extends EventEmitter {
-    send(data: Record<string, any>, comment?: string, event?: string, retry?: Number): void;
+    send(
+      data: Record<string, any>,
+      comment?: string,
+      event?: string,
+      retry?: Number
+    ): void;
   }
   export interface EventStreamContract {
     dispatch(callback);
