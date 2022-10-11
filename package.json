@@ -100,7 +100,8 @@
       ]
     }
   },
-  "types": "./build/index.d.ts",
+  "types": "build/adonis-typings/index.d.ts",
+  "typings": "build/adonis-typings/index.d.ts",
   "directories": {
     "test": "tests"
   }

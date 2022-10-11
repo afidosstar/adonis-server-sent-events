@@ -43,14 +43,14 @@ Register the following middleware inside `start/kernel.ts` file.
 
 ```ts
 Server.middleware.register([
-    () => import('@ioc:Adonis/Middleware/EventSourceWatcher'),
+    'Adonis/Middleware/EventSourceWatcher',
 ])
 ```
 >Or alternatively setup the middleware as a named (use any name you feel like) middleware inside `start/kernel.ts` file.
 
 ```ts
 Server.middleware.registerNamed({
-    eventsource: () => import('@ioc:Adonis/Middleware/EventSourceWatcher'),
+    eventsource: 'Adonis/Middleware/EventSourceWatcher',
 })
 ```
 
@@ -60,23 +60,24 @@ Server.middleware.registerNamed({
 
 ```ts
 import Route from '@ioc:Adonis/Core/Route'
+import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
 
 /**
  * If the 'eventsource' named middleware is set
  * then setup route like below
  */
-Route.get('/stream', ( { source }: HttpServerSentEventContextContract ) => {
-      // send a server-sent events comment
-      source.send("Hello AdonisJS", '!This is a comment!');
+Route.get('/stream', ({source}: HttpContextContract) => {
+    // send a server-sent events comment
+    source.send("Hello AdonisJS", '!This is a comment!');
 }).middleware(['eventsource']);
 
 /**
  * If the middleware is a global middlware
  * then setup route like below
  */
-Route.get('/stream', ( { source }: HttpServerSentEventContextContract ) => {
-      // send a server-sent events comment
-      source.send("Hello AdonisJS", '!This is a comment!');
+Route.get('/stream', ({source}: HttpContextContract) => {
+    // send a server-sent events comment
+    source.send("Hello AdonisJS", '!This is a comment!');
 })
 
 Route.post('/send/email', 'NotificationsController.sendEmail')
