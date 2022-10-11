@@ -90,10 +90,11 @@ Route.post('/send/email', 'NotificationsController.sendEmail')
 
 ```ts
 import Mail from "@ioc:Adonis/Addons/Mail";
+import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
 
 export default class NotificationsController {
 
-    async sendEmail ({ request, auth, source }:HttpServerSentEventContextContract){
+    async sendEmail ({ request, auth, source }:HttpContextContract){
 
         let input = request.only([
             'ticket_user_id'
