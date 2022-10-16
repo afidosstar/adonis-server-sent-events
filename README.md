@@ -5,6 +5,7 @@ An addon/plugin package to provide server-sent events functionality for AdonisJS
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Coveralls][coveralls-image]][coveralls-url]
+[![License][license-image]][license-url]
 
 <img src="https://avatars.githubusercontent.com/u/13810373?s=3=200&v=4" width="200px" align="right" hspace="30px" vspace="140px">
 
@@ -201,16 +202,18 @@ MIT
 
 See the [CONTRIBUTING.md](https://github.com/affidosstar/adonis-server-sent-events/blob/main/CONTRIBUTING.md) file for info
 
-[npm-image]: https://img.shields.io/npm/v/adonisjs-sse.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/%40fickou%2Fadonis-server-sent-events.svg?style=flat-square&logo=npm
 [npm-url]: https://npmjs.org/package/@fickou/adonis-server-sent-events
 
 [travis-image]: https://img.shields.io/travis/afidosstar/adonis-server-sent-events/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/afidosstar/adonis-server-sent-events
 
-[coveralls-image]: https://img.shields.io/coveralls/afidosstar/adonis-server-sent-events/master.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/afidosstar/adonis-server-sent-events/main.svg?style=flat-square
 
 [coveralls-url]: https://coveralls.io/github/afidosstar/adonis-server-sent-events
 
+[license-image]: https://img.shields.io/npm/l/%40fickou%2Fadonis-server-sent-events.svg?color=blueviolet&style=flat-square
+[license-url]: LICENSE.md "license"
 ## Support 
 
 My Facebook [Facebook Page](https://web.facebook.com/afidosstar).
