@@ -21,14 +21,14 @@ Register the following middleware inside `start/kernel.ts` file.
 
 ```ts
 Server.middleware.register([
-    () => import('@ioc:Adonis/Middleware/EventSourceWatcher'),
+    "Adonis/Middleware/EventSourceWatcher",
 ])
 ```
 >Or alternatively setup the middleware as a named (use any name you feel like) middleware inside `start/kernel.ts` file.
 
 ```ts
 Server.middleware.registerNamed({
-    eventsource: () => import('Adonis/Middleware/EventSourceWatcher'),
+    eventsource: "Adonis/Middleware/EventSourceWatcher",
 })
 ```
 

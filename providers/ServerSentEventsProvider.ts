@@ -1,3 +1,13 @@
+/*
+ *  Copyright (c) 2022.
+ *  @created 17/10/2022 - 16:35:25
+ *  @project adonis-server-sent-events
+ *  @author "fiacre.ayedoun@gmail.com"
+ *
+ *  For the full copyright and license information, please view the LICENSE
+ *  file that was distributed with this source code.
+ */
+
 import { Source, EventStream } from "server-events-nodejs";
 import { v4 } from "uuid";
 import { IocContract } from "@adonisjs/fold";
